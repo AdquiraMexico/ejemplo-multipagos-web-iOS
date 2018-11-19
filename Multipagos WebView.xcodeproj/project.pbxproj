@@ -1,0 +1,585 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		65B8594421A34792004E9CFA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B8594321A34792004E9CFA /* AppDelegate.swift */; };
+		65B8594621A34792004E9CFA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B8594521A34792004E9CFA /* ViewController.swift */; };
+		65B8594921A34792004E9CFA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65B8594721A34792004E9CFA /* Main.storyboard */; };
+		65B8594B21A34793004E9CFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65B8594A21A34793004E9CFA /* Assets.xcassets */; };
+		65B8594E21A34793004E9CFA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65B8594C21A34793004E9CFA /* LaunchScreen.storyboard */; };
+		65B8595921A34794004E9CFA /* Multipagos_WebViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B8595821A34794004E9CFA /* Multipagos_WebViewTests.swift */; };
+		65B8596421A34794004E9CFA /* Multipagos_WebViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B8596321A34794004E9CFA /* Multipagos_WebViewUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		65B8595521A34794004E9CFA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 65B8593821A34792004E9CFA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 65B8593F21A34792004E9CFA;
+			remoteInfo = "Multipagos WebView";
+		};
+		65B8596021A34794004E9CFA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 65B8593821A34792004E9CFA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 65B8593F21A34792004E9CFA;
+			remoteInfo = "Multipagos WebView";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		65B8594021A34792004E9CFA /* Multipagos WebView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Multipagos WebView.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		65B8594321A34792004E9CFA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		65B8594521A34792004E9CFA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		65B8594821A34792004E9CFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		65B8594A21A34793004E9CFA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		65B8594D21A34793004E9CFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		65B8594F21A34793004E9CFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65B8595421A34794004E9CFA /* Multipagos WebViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Multipagos WebViewTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		65B8595821A34794004E9CFA /* Multipagos_WebViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Multipagos_WebViewTests.swift; sourceTree = "<group>"; };
+		65B8595A21A34794004E9CFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65B8595F21A34794004E9CFA /* Multipagos WebViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Multipagos WebViewUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		65B8596321A34794004E9CFA /* Multipagos_WebViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Multipagos_WebViewUITests.swift; sourceTree = "<group>"; };
+		65B8596521A34794004E9CFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		65B8593D21A34792004E9CFA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65B8595121A34794004E9CFA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65B8595C21A34794004E9CFA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		65B8593721A34792004E9CFA = {
+			isa = PBXGroup;
+			children = (
+				65B8594221A34792004E9CFA /* Multipagos WebView */,
+				65B8595721A34794004E9CFA /* Multipagos WebViewTests */,
+				65B8596221A34794004E9CFA /* Multipagos WebViewUITests */,
+				65B8594121A34792004E9CFA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		65B8594121A34792004E9CFA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				65B8594021A34792004E9CFA /* Multipagos WebView.app */,
+				65B8595421A34794004E9CFA /* Multipagos WebViewTests.xctest */,
+				65B8595F21A34794004E9CFA /* Multipagos WebViewUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		65B8594221A34792004E9CFA /* Multipagos WebView */ = {
+			isa = PBXGroup;
+			children = (
+				65B8594321A34792004E9CFA /* AppDelegate.swift */,
+				65B8594521A34792004E9CFA /* ViewController.swift */,
+				65B8594721A34792004E9CFA /* Main.storyboard */,
+				65B8594A21A34793004E9CFA /* Assets.xcassets */,
+				65B8594C21A34793004E9CFA /* LaunchScreen.storyboard */,
+				65B8594F21A34793004E9CFA /* Info.plist */,
+			);
+			path = "Multipagos WebView";
+			sourceTree = "<group>";
+		};
+		65B8595721A34794004E9CFA /* Multipagos WebViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				65B8595821A34794004E9CFA /* Multipagos_WebViewTests.swift */,
+				65B8595A21A34794004E9CFA /* Info.plist */,
+			);
+			path = "Multipagos WebViewTests";
+			sourceTree = "<group>";
+		};
+		65B8596221A34794004E9CFA /* Multipagos WebViewUITests */ = {
+			isa = PBXGroup;
+			children = (
+				65B8596321A34794004E9CFA /* Multipagos_WebViewUITests.swift */,
+				65B8596521A34794004E9CFA /* Info.plist */,
+			);
+			path = "Multipagos WebViewUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		65B8593F21A34792004E9CFA /* Multipagos WebView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 65B8596821A34794004E9CFA /* Build configuration list for PBXNativeTarget "Multipagos WebView" */;
+			buildPhases = (
+				65B8593C21A34792004E9CFA /* Sources */,
+				65B8593D21A34792004E9CFA /* Frameworks */,
+				65B8593E21A34792004E9CFA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Multipagos WebView";
+			productName = "Multipagos WebView";
+			productReference = 65B8594021A34792004E9CFA /* Multipagos WebView.app */;
+			productType = "com.apple.product-type.application";
+		};
+		65B8595321A34794004E9CFA /* Multipagos WebViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 65B8596B21A34794004E9CFA /* Build configuration list for PBXNativeTarget "Multipagos WebViewTests" */;
+			buildPhases = (
+				65B8595021A34794004E9CFA /* Sources */,
+				65B8595121A34794004E9CFA /* Frameworks */,
+				65B8595221A34794004E9CFA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				65B8595621A34794004E9CFA /* PBXTargetDependency */,
+			);
+			name = "Multipagos WebViewTests";
+			productName = "Multipagos WebViewTests";
+			productReference = 65B8595421A34794004E9CFA /* Multipagos WebViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		65B8595E21A34794004E9CFA /* Multipagos WebViewUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 65B8596E21A34794004E9CFA /* Build configuration list for PBXNativeTarget "Multipagos WebViewUITests" */;
+			buildPhases = (
+				65B8595B21A34794004E9CFA /* Sources */,
+				65B8595C21A34794004E9CFA /* Frameworks */,
+				65B8595D21A34794004E9CFA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				65B8596121A34794004E9CFA /* PBXTargetDependency */,
+			);
+			name = "Multipagos WebViewUITests";
+			productName = "Multipagos WebViewUITests";
+			productReference = 65B8595F21A34794004E9CFA /* Multipagos WebViewUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		65B8593821A34792004E9CFA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = Daniel;
+				TargetAttributes = {
+					65B8593F21A34792004E9CFA = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					65B8595321A34794004E9CFA = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 65B8593F21A34792004E9CFA;
+					};
+					65B8595E21A34794004E9CFA = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 65B8593F21A34792004E9CFA;
+					};
+				};
+			};
+			buildConfigurationList = 65B8593B21A34792004E9CFA /* Build configuration list for PBXProject "Multipagos WebView" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 65B8593721A34792004E9CFA;
+			productRefGroup = 65B8594121A34792004E9CFA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				65B8593F21A34792004E9CFA /* Multipagos WebView */,
+				65B8595321A34794004E9CFA /* Multipagos WebViewTests */,
+				65B8595E21A34794004E9CFA /* Multipagos WebViewUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		65B8593E21A34792004E9CFA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65B8594E21A34793004E9CFA /* LaunchScreen.storyboard in Resources */,
+				65B8594B21A34793004E9CFA /* Assets.xcassets in Resources */,
+				65B8594921A34792004E9CFA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65B8595221A34794004E9CFA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65B8595D21A34794004E9CFA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		65B8593C21A34792004E9CFA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65B8594621A34792004E9CFA /* ViewController.swift in Sources */,
+				65B8594421A34792004E9CFA /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65B8595021A34794004E9CFA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65B8595921A34794004E9CFA /* Multipagos_WebViewTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65B8595B21A34794004E9CFA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65B8596421A34794004E9CFA /* Multipagos_WebViewUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		65B8595621A34794004E9CFA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 65B8593F21A34792004E9CFA /* Multipagos WebView */;
+			targetProxy = 65B8595521A34794004E9CFA /* PBXContainerItemProxy */;
+		};
+		65B8596121A34794004E9CFA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 65B8593F21A34792004E9CFA /* Multipagos WebView */;
+			targetProxy = 65B8596021A34794004E9CFA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		65B8594721A34792004E9CFA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				65B8594821A34792004E9CFA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		65B8594C21A34793004E9CFA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				65B8594D21A34793004E9CFA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		65B8596621A34794004E9CFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		65B8596721A34794004E9CFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		65B8596921A34794004E9CFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Multipagos WebView/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "mp.Multipagos-WebView";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		65B8596A21A34794004E9CFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Multipagos WebView/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "mp.Multipagos-WebView";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		65B8596C21A34794004E9CFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Multipagos WebViewTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "mp.Multipagos-WebViewTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Multipagos WebView.app/Multipagos WebView";
+			};
+			name = Debug;
+		};
+		65B8596D21A34794004E9CFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Multipagos WebViewTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "mp.Multipagos-WebViewTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Multipagos WebView.app/Multipagos WebView";
+			};
+			name = Release;
+		};
+		65B8596F21A34794004E9CFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Multipagos WebViewUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "mp.Multipagos-WebViewUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Multipagos WebView";
+			};
+			name = Debug;
+		};
+		65B8597021A34794004E9CFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Multipagos WebViewUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "mp.Multipagos-WebViewUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Multipagos WebView";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		65B8593B21A34792004E9CFA /* Build configuration list for PBXProject "Multipagos WebView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65B8596621A34794004E9CFA /* Debug */,
+				65B8596721A34794004E9CFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		65B8596821A34794004E9CFA /* Build configuration list for PBXNativeTarget "Multipagos WebView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65B8596921A34794004E9CFA /* Debug */,
+				65B8596A21A34794004E9CFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		65B8596B21A34794004E9CFA /* Build configuration list for PBXNativeTarget "Multipagos WebViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65B8596C21A34794004E9CFA /* Debug */,
+				65B8596D21A34794004E9CFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		65B8596E21A34794004E9CFA /* Build configuration list for PBXNativeTarget "Multipagos WebViewUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65B8596F21A34794004E9CFA /* Debug */,
+				65B8597021A34794004E9CFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 65B8593821A34792004E9CFA /* Project object */;
+}
