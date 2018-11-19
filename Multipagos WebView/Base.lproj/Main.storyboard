@@ -37,6 +37,7 @@
                     </view>
                     <connections>
                         <outlet property="Lanzar" destination="t9A-oR-CLd" id="ECS-PA-ch8"/>
+                        <outlet property="vistaWeb" destination="XNs-Jh-xaU" id="dnK-ca-La3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
