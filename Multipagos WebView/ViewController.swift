@@ -8,6 +8,7 @@
 
 import UIKit
 
+import WebKit
 
 
 
@@ -15,10 +16,46 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var Lanzar: UIButton!
+
+    @IBOutlet weak var vistaWeb: WKWebView!
     
-    @IBOutlet weak var vistaWeb: UIWebView!
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        vistaWeb.navigationDelegate = self as? WKNavigationDelegate
+        
+        self.vistaWeb.addObserver(self, forKeyPath: "URL", options: .new, context: nil)
+        self.vistaWeb.addObserver(self, forKeyPath: "estimatedProgress", options: .new, context: nil)
+        
+    }
+    
+    override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
+        if keyPath == #keyPath(WKWebView.url) {
+            print("### URL:", self.vistaWeb.url!)
+        }
+        
+        if keyPath == #keyPath(WKWebView.estimatedProgress) {
+            // When page load finishes. Should work on each page reload.
+            if (self.vistaWeb.estimatedProgress == 1) {
+                print("### EP:", self.vistaWeb.estimatedProgress)
+            }
+        }
+    }
+    
     @IBAction func invocar(_ sender: Any) {
 
+        
+        func getPostString(params:[String:Any]) -> String
+        {
+            var data = [String]()
+            for(key, value) in params
+            {
+                data.append(key + "=\(value)")
+            }
+            return data.map { String($0) }.joined(separator: "&")
+        }
+
+        
         print("Post Lanzado")
         
         /*
@@ -41,6 +78,7 @@ class ViewController: UIViewController {
 
         let parameters = ["mp_account": 3202,
                           "mp_customername": "PRUEBAS BANCOMER",
+                          "mp_order" : "2018111500000",
                           "mp_reference"  : "ABCDE12345",
                           "mp_product" : 1,
                           "mp_node"  : 1,
@@ -61,16 +99,37 @@ class ViewController: UIViewController {
         //now create the URLRequest object using the url object
         var request = URLRequest(url: url)
         
-        request.httpMethod = "POST" //set http method as POST
-        vistaWeb.loadRequest(request)
+        let postString = getPostString(params: parameters)
+        var escapedString = postString.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed)
+
+        request.httpBody = escapedString!.data(using: .utf8)
         
+        request.httpMethod = "POST" //set http method as POST
+        print(escapedString)
+
+        print(request)
+
+        let task = URLSession.shared.dataTask(with: request) { (data : Data?, response : URLResponse?, error : Error?) in
+            if data != nil
+            {
+                if let returnString = String(data: data!, encoding: .utf8)
+                {
+                    self.vistaWeb.loadHTMLString(returnString, baseURL: url)
+                }
+            }
+        }
+        task.resume()
+        
+        
+        //vistaWeb.load(request)
+        /*
         do {
             request.httpBody = try JSONSerialization.data(withJSONObject: parameters, options: .prettyPrinted) // pass dictionary to nsdata object and set it as request body
         } catch let error {
             print(error.localizedDescription)
         }
         vistaWeb.loadRequest(request)
-
+*/
         /*
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")
         request.addValue("application/json", forHTTPHeaderField: "Accept")
@@ -102,10 +161,6 @@ class ViewController: UIViewController {
     }
     
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
 
 
 }
