@@ -22,11 +22,11 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // Para localizar el URL y Detectar el URL de Success para poder cerrar el webview
         vistaWeb.navigationDelegate = self as? WKNavigationDelegate
-        
         self.vistaWeb.addObserver(self, forKeyPath: "URL", options: .new, context: nil)
         self.vistaWeb.addObserver(self, forKeyPath: "estimatedProgress", options: .new, context: nil)
-        
+        //termina
     }
     
     override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
@@ -44,7 +44,7 @@ class ViewController: UIViewController {
     
     @IBAction func invocar(_ sender: Any) {
 
-        
+        //Crea el data para mandar a post
         func getPostString(params:[String:Any]) -> String
         {
             var data = [String]()
@@ -59,6 +59,7 @@ class ViewController: UIViewController {
         print("Post Lanzado")
         
         /*
+         Ejemplo de como se tienen que enviar los datos
          https://prepro.adquiracloud.mx/clb/endpoint/flapMexico
          mp_account:<input name="mp_account" value="3202"><br>
          mp_customername:<input name="mp_customername" value="PRUEBAS BANCOMER"><br>
@@ -90,25 +91,29 @@ class ViewController: UIViewController {
                           "mp_signature" : "MrQSwFwMlr834ZCsvINkWsAW2KQ"
             ] as [String : Any]
         
-        //create the url with URL
+        //URL a donde debe de ir
         let url = URL(string: "https://prepro.adquiracloud.mx/clb/endpoint/flapMexico")! //change the url
-        
-        //create the session object
-        let session = URLSession.shared
 
-        //now create the URLRequest object using the url object
+        //Crear el URL Request
         var request = URLRequest(url: url)
         
+        //Trae el string de datos que se tiene que enviar a Multipagos
         let postString = getPostString(params: parameters)
-        var escapedString = postString.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed)
+        
+        //Limpiar el string para que no rompa el URL
+        let escapedString = postString.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed)
 
+        //Agregar al Body del Request
         request.httpBody = escapedString!.data(using: .utf8)
         
+        //Settea el Médoto
         request.httpMethod = "POST" //set http method as POST
+        
+        //Prints para debug
+        /*
         print(escapedString)
-
         print(request)
-
+        */
         let task = URLSession.shared.dataTask(with: request) { (data : Data?, response : URLResponse?, error : Error?) in
             if data != nil
             {
@@ -120,44 +125,6 @@ class ViewController: UIViewController {
         }
         task.resume()
         
-        
-        //vistaWeb.load(request)
-        /*
-        do {
-            request.httpBody = try JSONSerialization.data(withJSONObject: parameters, options: .prettyPrinted) // pass dictionary to nsdata object and set it as request body
-        } catch let error {
-            print(error.localizedDescription)
-        }
-        vistaWeb.loadRequest(request)
-*/
-        /*
-        request.addValue("application/json", forHTTPHeaderField: "Content-Type")
-        request.addValue("application/json", forHTTPHeaderField: "Accept")
-        //yourWebView.loadRequest
-        //create dataTask using the session object to send data to the server
-        let task = session.dataTask(with: request as URLRequest, completionHandler: { data, response, error in
-            
-            guard error == nil else {
-                return
-            }
-            
-            guard let data = data else {
-                return
-            }
-            
-            do {
-                //create json object from data
-                if let json = try JSONSerialization.jsonObject(with: data, options: .mutableContainers) as? [String: Any] {
-                    print(json)
-                    // handle json...
-                }
-            } catch let error {
-                print(error.localizedDescription)
-            }
-        })
-        task.resume()
-        
-        */
     }
     
     
